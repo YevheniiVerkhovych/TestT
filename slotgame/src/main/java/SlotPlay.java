@@ -9,7 +9,7 @@ public class SlotPlay {
         slotPlayLogic.setCoinsWinAmount(20);
 
         for(int i=0; i<timesToPlay; i++) {
-            slotPlayLogic.PlayRound(slotPlayLogic.getBetCoinsValue());
+            slotPlayLogic.playRound(slotPlayLogic.getBetCoinsValue());
         }
 
         player.getStatistic("SlotPlay");
@@ -21,4 +21,4 @@ public class SlotPlay {
 //- we can win 30% of rounds, by 20 coins for each round
 //- so, the total amount of prize we can calculate as: 20*0.3*N,NNN
 //- RPT is winAmount/spentAmount, so: (20*0.3*N*1.111)/N*10
-//-  if N = 1000000, RPT is around = 0,67
+//-  if N = 1000000, RPT is around = 0,667

@@ -1,4 +1,3 @@
-
 public class SlotPlayLogic {
     private Player player;
     private int coinsWinAmount ;
@@ -10,7 +9,7 @@ public class SlotPlayLogic {
         this.player = player;
     }
 
-    public void PlayRound(int betCoinsValue) {
+    public void playRound(int betCoinsValue) {
         int winNumber;
         winNumber =player.getWinNumber();
         player.addTimesPlayed();
@@ -22,7 +21,7 @@ public class SlotPlayLogic {
         }
 
         if ((0 <= player.getWinNumber() && player.getWinNumber() < chanceFreeBetWin)) {
-            PlayRound(0);
+            playRound(0);
             player.addTimesFreeBetWin();
         }
     }
